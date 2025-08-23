@@ -17,7 +17,7 @@ git init
 ```
 4. 然后我们需要将该文件夹与我们在github上创建的远程仓库关联起来
 ```bash
-git remote add origin
+git remote add origin "远程仓库地址"
 ```
 5. 接下来我们可以在该文件夹中创建一些文件，并将这些文件添加到git的暂存区
 ```bash
@@ -25,7 +25,7 @@ git add .
 ```
 6. 然后我们需要提交这些文件到本地的git仓库
 ```bash
-git commit -m "Initial commit" 引号内是本次提交的说明
+git commit -m "Initial commit" #引号内是本次提交的说明
 ```
 7. 最后我们可以将本地的代码推送到远程的github仓库
 ```bash
