@@ -33,16 +33,32 @@ git add .
 ```
 6. 然后我们需要提交这些文件到本地的git仓库
 ```bash
-git commit -m "Initial commit" #引号内是本次提交的说明
+
+# 提交是可以新建分支的
+git branch #查看本地分支
+
+git checkout -b newbranch #新建并切换到newbranch分支
+
+git branch -M main #重命名本地分支为main
+
+#在某个分支开发新的功能，开发完成后合并到主分支
+git checkout main #切换到主分支
+git merge newbranch #将newbranch分支合并到main分支
+
+#使用rebase方式合并分支
+git checkout main #切换到主分支
+git rebase newbranch #将newbranch分支的修改应用到main分支上
+
+#删除提交的分支
+git branch -d newbranch #删除newbranch分支
+#提交到本地仓库
+git commit -m "Initial commit" #引号内是本次提交的说明，-m表示message
 ```
 7. 最后我们可以将本地的代码推送到远程的github仓库
 ```bash
 #分支名称可能是main或者master，具体以你创建的远程仓库为准
-git branch #查看本地分支
 
 git push origin master:main #如果本地分支是master，远程分支是main
-
-git branch -M main #重命名本地分支为main
 
 git push -u origin master #默认推送
 
