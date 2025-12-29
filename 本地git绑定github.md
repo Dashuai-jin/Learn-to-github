@@ -1,4 +1,3 @@
-![alt text](image.png)
 ## 绑定github
 打开gitbash:
 

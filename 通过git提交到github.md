@@ -8,7 +8,7 @@ pull：该单词直译过来就是“拉”的意思，如果我们远程仓库�
 ```bash
 git pull origin main
 ```
-
+![alt text](image.png)
 ## 步骤
 1. 首先我们需要在github上创建一个新的仓库，假设我们创建的仓库名称为my-repo。
 2. 然后我们在本地创建一个新的文件夹，并进入该文件夹
